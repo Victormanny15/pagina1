@@ -1,0 +1,175 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #121212;
+    color: #FFFFFF;
+    padding-top: 80px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+nav {
+    background-color: #1F1F1F;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6347;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; /* Imagen a la izquierda, texto a la derecha */
+    margin: 20px;
+}
+
+.profile-section img {
+    border-radius: 50%;
+    animation: bounceIn 15s;
+    margin-right: 60px; /* Aumentar el espacio entre la imagen y el texto */
+    max-width: 200px;
+}
+
+.profile-text {
+    flex: 2;
+    text-align: left;
+}
+
+.about-section {
+    text-align: left;
+}
+
+.about-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #1F1F1F;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FF6347;
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#portafolio {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: 400px; /* Ajusta la altura según tus necesidades */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortar */
+    margin: auto; /* Centra las imágenes dentro del contenedor */
+}
+
+#contacto {
+    background-color: #1F1F1F;
+    color: #FFFFFF;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+form label, form input, form button {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+button {
+    background-color: #FF6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e5533d;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
